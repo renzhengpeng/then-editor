@@ -1,0 +1,26 @@
+@include b(icon-heightLight) {
+  //background-image: url("../asserts/img/font-color.svg");
+}
+
+@include b(heightLight-pen-container){
+  display: flex;
+  //justify-content: space-between;
+  > div {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: #f2f2f2;
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+}

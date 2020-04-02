@@ -1,0 +1,21 @@
+@mixin b ($b) {
+  .#{$prefix + $separator + $b} {
+    @content;
+  }
+}
+
+@mixin e ($e) {
+  @at-root {
+    #{& + $element + $e} {
+      @content;
+    }
+  }
+}
+
+@mixin m ($m) {
+  @at-root {
+    #{& + $modifier + $m} {
+      @content;
+    }
+  }
+}

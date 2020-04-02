@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'bdfintFont';
+  src: url('./fonts/bdfint.eot');
+  src: url('./fonts/bdfint.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="bdfint-editor-icon-"], [class*=" bdfint-editor-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'bdfintFont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bdfint-editor-icon-graffiti:before {
+  content: "\e900";
+}
+.bdfint-editor-icon-align-left:before {
+  content: "\e901";
+}
+.bdfint-editor-icon-align-middle:before {
+  content: "\e902";
+}
+.bdfint-editor-icon-align-right:before {
+  content: "\e903";
+}
+.bdfint-editor-icon-blockquote:before {
+  content: "\e904";
+}
+.bdfint-editor-icon-bold:before {
+  content: "\e905";
+}
+.bdfint-editor-icon-close:before {
+  content: "\e906";
+}
+.bdfint-editor-icon-code:before {
+  content: "\e907";
+}
+.bdfint-editor-icon-font-color:before {
+  content: "\e908";
+}
+.bdfint-editor-icon-font-family:before {
+  content: "\e909";
+}
+.bdfint-editor-icon-font-size:before {
+  content: "\e90a";
+}
+.bdfint-editor-icon-heading:before {
+  content: "\e90b";
+}
+.bdfint-editor-icon-img:before {
+  content: "\e90c";
+}
+.bdfint-editor-icon-italic:before {
+  content: "\e90d";
+}
+.bdfint-editor-icon-link:before {
+  content: "\e90e";
+}
+.bdfint-editor-icon-list:before {
+  content: "\e90f";
+}
+.bdfint-editor-icon-list-ol:before {
+  content: "\e910";
+}
+.bdfint-editor-icon-list-ul:before {
+  content: "\e91e";
+}
+.bdfint-editor-icon-pen:before {
+  content: "\e911";
+  color: #ff0;
+}
+.bdfint-editor-icon-pen_1:before {
+  content: "\e912";
+  color: #63f963;
+}
+.bdfint-editor-icon-pen_2:before {
+  content: "\e913";
+  color: #fc7999;
+}
+.bdfint-editor-icon-pen_3:before {
+  content: "\e914";
+  color: #72cdfd;
+}
+.bdfint-editor-icon-pen_4:before {
+  content: "\e915";
+  color: #e91313;
+}
+.bdfint-editor-icon-pen_5:before {
+  content: "\e916";
+  color: #180;
+}
+.bdfint-editor-icon-redo:before {
+  content: "\e917";
+}
+.bdfint-editor-icon-smile:before {
+  content: "\e918";
+}
+.bdfint-editor-icon-strikethrough:before {
+  content: "\e919";
+}
+.bdfint-editor-icon-table:before {
+  content: "\e91a";
+}
+.bdfint-editor-icon-underline:before {
+  content: "\e91b";
+}
+.bdfint-editor-icon-undo:before {
+  content: "\e91c";
+}
+.bdfint-editor-icon-video:before {
+  content: "\e91d";
+}

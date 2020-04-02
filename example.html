@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>example</title>
+  <link rel="stylesheet" href="./dist/css/BdfintEditor.min.css">
+  <style>
+    #app {
+      width: 1000px;
+      margin: 50px auto;
+    }
+    #display {
+      width: 1000px;
+      margin: 30px auto 50px;
+    }
+    #button {
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <div style="text-align: center;margin-top: 50px;">
+    <button id="button">预览</button>
+  </div>
+  <div class="keep-style-width-editor">
+
+  </div>
+</body>
+<script src="./dist/js/BdfintEditor.min.js"></script>
+<script>
+  var button = document.querySelector('#button');
+  var display = document.querySelector('.keep-style-width-editor');
+  var content = '';
+  var editor = new BdfintEditor({
+    el: '#app',
+    styleWithCSS: false
+  });
+  editor.config({
+    // menus: ['head', 'fontSize', 'bold', 'italic'],
+    onChange: function(mutationList) {
+      console.log(mutationList)
+    },
+    onFocus: function () {
+      // ...
+      console.log('获取焦点');
+    },
+    onBlur: function () {
+      // ...
+      console.log('失去焦点');
+    },
+    onReady: function () {
+      editor.message('success', '准备就绪');
+    },
+    uploadPath: 'api/v1?x=xxxx',
+    uploadQuery: {
+      y: 'yyyy'
+    }
+  });
+  editor.create();
+  button.addEventListener('click', function () {
+    content = editor.getContent();
+    display.innerHTML = content;
+  });
+
+</script>
+</html>

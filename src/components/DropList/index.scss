@@ -1,0 +1,33 @@
+@include b(droplist) {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 120px;
+  max-height: 250px;
+  z-index: 2019;
+  overflow: auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 5px #dddddd;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  @include e(title){
+    color: #888888;
+  }
+}
+
+@include b(droplist-item) {
+  height: 45px;
+  line-height: 45px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  padding: 5px;
+  white-space: nowrap;
+  &:hover {
+    background-color: #eeeeee;
+  }
+}

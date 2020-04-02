@@ -1,0 +1,28 @@
+@include b(menu){
+  border-right: 1px solid #cdcdcd;
+  //padding: 0 5px;
+  position: relative;
+  width: $menuWidth;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  color: #555555;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: #dddddd;
+    color: #333333;
+  }
+  @include m(active) {
+    background-color: #dddddd;
+    color: #333333;
+  }
+  .bdfint-editor-menu-icon {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,85 @@
+@include b(select) {
+    display: inline-block;
+    margin: 0 8px;
+}
+@include b(select-main) {
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    position: relative;
+    vertical-align: middle;
+}
+@include b(select-label) {
+    display: inline-block;
+    height: 100%;
+    color: #555;
+    font-size: 12px;
+}
+@include b(select-droplist) {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 105%;
+    z-index: 1001;
+    border: 1px solid #e4e7ed;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
+    box-sizing: border-box;
+    li {
+        display: flex;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: #606266;
+        transition: all .15s;
+        &:hover {
+            background-color: #eeeeee;
+        }
+    }
+    
+}
+@include b(select-placeholder) {
+    color: #cccccc;
+    position: absolute;
+    height: 100%;
+    padding: 0 5px;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+}
+@include b(select-selected-option) {
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    padding: 0 5px;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+@include b(select-arrow) {
+    color: #bbbbbb;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #bbbbbb;
+    border-left: 5px solid rgba(0,0,0,0);
+    border-right: 5px solid rgba(0,0,0,0);
+    top: 7px;
+    right: 5px;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,38 @@
+$prefix: 'bdfint-editor';
+$icon: 'icon';
+$separator: '-';
+$modifier: '--';
+$element: '__';
+
+$menuWidth: 40px;
+$toolHeight: 35px;
+$menuCounts: 18;
+/*======================colors========================*/
+$color-white: #ffffff !default;
+$color-default: #5e6d82 !default;
+$color-info: #909399 !default;
+$color-success: #67c23a !default;
+$color-warning: #e6a23c !default;
+$color-error: #f56c6c !default;
+
+$color-gray-1: #f9f9f9 !default;
+$color-gray-2: #f2f2f2 !default;
+$color-gray-2: #eeeeee !default;
+$color-gray-3: #d1d1d1 !default;
+$color-gray-4: #cccccc !default;
+
+$bg-color-default: rgba(245, 247, 250, 1);
+$bg-color-hover-default: rgba(245, 247, 250, 1);
+$bg-color-info: mix($color-white, $color-info, 90%) !default;
+$bg-color-success: mix($color-white, $color-success, 90%) !default;
+$bg-color-warning: mix($color-white, $color-warning, 90%) !default;
+$bg-color-error: mix($color-white, $color-error, 90%) !default;
+
+$shadow-color-default: rgba(0, 0, 0, .1);
+
+$border-color: #ebeef5;
+$border-color-info: mix($color-white, $color-info, 80%) !default;
+$border-color-success: mix($color-white, $color-success, 80%) !default;
+$border-color-warning: mix($color-white, $color-warning, 80%) !default;
+$border-color-error: mix($color-white, $color-error, 80%) !default;
+/*======================colors end========================*/

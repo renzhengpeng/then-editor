@@ -1,0 +1,32 @@
+@include b(toolbar) {
+  display: flex;
+  height: 35px;
+  line-height: 35px;
+  box-sizing: border-box;
+  background-color: $bg-color-default;
+  //box-shadow: 0 1px 1px 1px $shadow-color-default;
+  border: 1px solid #cccccc;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  // 禁止选中工具栏文本
+  -webkit-touch-callout: none; /* iOS Safari */
+
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+
+  -khtml-user-select: none; /* Konqueror */
+
+  -moz-user-select: none; /* Firefox */
+
+  -ms-user-select: none; /* Internet Explorer/Edge */
+
+  user-select: none; /* Non-prefixed version, currently
+
+not supported by any browser */
+}

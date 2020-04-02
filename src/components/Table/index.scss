@@ -1,0 +1,35 @@
+@include b(icon-table) {
+  //background-image: url("../asserts/img/table.svg");
+}
+
+@include b(table-body) {
+  display: flex;
+  width: 230px;
+  flex-wrap: wrap;
+  padding: 0 0 0 10px;
+  box-sizing: border-box;
+}
+
+@include b(table-cell) {
+  width: 11px;
+  height: 11px;
+  margin: 1px;
+  border: 1px solid #bbbbbb;
+}
+
+@include b(selected-cell) {
+  background-color: cornflowerblue;
+}
+@include b(table-delete-btn){
+  position: absolute;
+  top: -25px;
+  right: 0;
+  width: 25px;
+  background-color: rgba(0,0,0,0.1);
+  height: 26px;
+  cursor: pointer;
+  background-image: url("../asserts/img/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

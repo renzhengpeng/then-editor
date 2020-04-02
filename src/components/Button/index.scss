@@ -1,0 +1,27 @@
+@include b(button-component) {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  font-weight: 500;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  padding: 8px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: all 0.15s;
+  &:hover {
+    background: #f4f4f5;
+    border: 1px solid #d3d4d6;
+    color: #555555;
+  }
+}

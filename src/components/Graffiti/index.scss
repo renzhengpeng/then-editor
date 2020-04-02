@@ -1,0 +1,11 @@
+@include b(graffiti-component) {
+
+}
+
+@include b(graffiti-canvas-wrapper){
+  width: 360px;
+  height: 300px;
+  box-sizing: border-box;
+  border: 1px solid #f2f2f2;
+  cursor: crosshair;
+}

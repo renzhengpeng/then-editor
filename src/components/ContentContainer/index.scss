@@ -1,0 +1,95 @@
+@include b(container) {
+  height: 320px;
+  border: 1px solid #cccccc;
+  border-top: none;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+@include b (content) {
+  outline: none;
+  height: 100%;
+  padding: 10px 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  > * {
+    margin: 15px 0;
+    line-height: 1.2;
+  }
+  pre code {
+    display: block;
+  }
+  blockquote {
+    display: block;
+    color: #888888;
+    border-left: 8px solid #d1d1d1;
+    padding: 12px 10px;
+    margin: 10px 0;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    > * {
+      margin: 8px 0;
+    }
+  }
+  a {
+    display: inline-block;
+    color: #0a90eb;
+    text-decoration: none;
+    cursor: text;
+  }
+
+  pre {
+    color: #fff;
+    background-color: rgba(39, 40, 34, 0.8);
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  ol, ul {
+    margin: 10px 0 10px 20px;
+    li {
+      padding: 5px 0;
+    }
+  }
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  td{
+    border: 2px solid #d1d1d1;
+  }
+  td, th {
+    padding: 8px 10px 8px 10px;
+  }
+  th {
+    border: 2px solid #888888;
+  }
+  figure {
+    transition: all 0.1s;
+    //display: inline-block;
+    > img {
+      max-width: 100%;
+      text-align: center;
+    }
+    position: relative;
+    > table {
+      width: 100%;
+    }
+    figcaption {
+      border: 1px solid transparent;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      &:hover {
+        border: 1px solid dodgerblue;
+      }
+    }
+  }
+  iframe {
+    box-shadow: none;
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    resize: both;
+  }
+}

@@ -1,0 +1,51 @@
+@include b(message){
+  display: flex;
+  //min-width: 200px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #ebeef5;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  background-color: #edf2fc;
+  transition: opacity .2s, top 0.35s;
+  overflow: hidden;
+  padding: 5px 15px;
+  align-items: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  z-index: 2020;
+  line-height: 1;
+  font-size: 13px;
+  animation: slideIn 4s forwards;
+  @include m(info){
+    color: $color-info;
+    background-color: $bg-color-info;
+    border: 1px solid $border-color-info;
+  }
+  @include m(warn){
+    color: $color-warning;
+    background-color: $bg-color-warning;
+    border: 1px solid $border-color-warning;
+  }
+  @include m(error){
+    color: $color-error;
+    background-color: $bg-color-error;
+    border: 1px solid $border-color-error;
+  }
+  @include m(success){
+    color: $color-success;
+    background-color: $bg-color-success;
+    border: 1px solid $border-color-success;
+  }
+}
+
+
+@keyframes slideIn {
+  0% {opacity: 0; top: 0;}
+  10% {opacity: 1; top: 40px;}
+  90% {opacity: 1; top: 40px;}
+  100% {opacity: 0; top: 0;}
+}
